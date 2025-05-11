@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Event Assignment 🚀</h1>
+
+        <!-- 1. Event Handling 🎈 -->
+        <section id="eventHandling">
+            <h2>1. Event Handling 🎈</h2>
+
+            <button id="clickBtn">Click Me!</button>
+            <div id="hoverDiv" style="width:150px; height:50px; background:lightblue; margin-top:10px; text-align:center; line-height:50px;">Hover Over Me</div>
+            <input type="text" id="keypressInput" placeholder="Type here for keypress..." style="margin-top:10px; display:block;">
+
+            <p><strong>Bonus: Secret Action 🤫</strong> (Double-click or Long Press)</p>
+            <div id="secretDiv">Secret Zone</div>
+
+            <div id="eventOutput" class="output">Event output will appear here.</div>
+        </section>
+
+        <!-- 2. Interactive Elements 🎮 -->
+        <section id="interactiveElements">
+            <h2>2. Interactive Elements 🎮</h2>
+
+            <p><strong>Button that changes text/color:</strong></p>
+            <button id="colorChangeBtn">Click to Change Me</button>
+
+            <p style="margin-top: 20px;"><strong>Image Gallery/Slideshow:</strong></p>
+            <div class="gallery">
+                <img id="galleryImage" src="images/pizza.jpg" alt="Gallery Image">
+                <div>
+                    <button id="prevBtn">&laquo; Prev</button>
+                    <button id="nextBtn">Next &raquo;</button>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Tabs/Accordion-style Content:</strong></p>
+            <div class="tabs">
+                <div class="tab-button active" data-tab="tab1">Tab 1</div>
+                <div class="tab-button" data-tab="tab2">Tab 2</div>
+                <div class="tab-button" data-tab="tab3">Tab 3</div>
+            </div>
+            <div id="tab1" class="tab-content">
+                <p>This is the content for Tab 1. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div id="tab2" class="tab-content hidden">
+                <p>Content for Tab 2 appears here! Consectetur adipiscing elit.</p>
+            </div>
+            <div id="tab3" class="tab-content hidden">
+                <p>And finally, Tab 3's exciting information. Sed do eiusmod tempor.</p>
+            </div>
+            <p><em>Bonus: Basic fade/color transitions added with CSS for tabs and buttons.</em></p>
+        </section>
+
+        <!-- 3. Form Validation 📋 -->
+        <section id="formValidation">
+            <h2>3. Form Validation 📋</h2>
+            <form id="myForm" novalidate>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="nameError" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                    <span id="passwordError" class="error-message"></span>
+                </div>
+                <input type="submit" value="Submit Form">
+            </form>
+            <div id="formFeedback" class="feedback" style="margin-top:15px;">Form feedback will appear here.</div>
+        </section>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
